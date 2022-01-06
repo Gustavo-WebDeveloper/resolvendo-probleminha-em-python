@@ -1,0 +1,32 @@
+Escreva um programa que leia o nome de um aluno e sua nota final. Em seguida, informe o
+conceito conforme a tabela abaixo. A saída do programa deve exibir na tela uma frase com o
+padrão descrito a seguir:
+Nome do aluno: Fábio José Nota final: 3.5 Frase a ser exibida: O aluno Fabio José tirou nota
+3.5 e se enquadra no conceito D
+
+_________________________________________________________________________
+
+inicio=(input('Deseja começar? '
+ 'Sim ou Não digite aqui: '))
+#Se o usuário dizer que sim vai seguir diante com o programa
+while inicio == 'sim':
+ nome = input('Nome do aluno: ')
+ nota = float(input('Nota final: '))
+#Foi colocado as condições de cada situação com base em cada nota respectivo seu resultado
+ if 0 <= nota < 3: resultado = 'E'
+ # caso a condição if for falsa, a condição elif vai fazer a verificação da outra opção.
+ elif 3 <= nota < 5: resultado = 'D'
+ elif 5 <= nota < 7: resultado = 'C'
+ elif 7 <= nota < 9: resultado = 'B'
+ elif 9 <= nota <= 10: resultado = 'A'
+
+ # A associação nos dicionários é feita por meio de uma chave que
+faz referência ao valor do nome,
+ # nota e resultado.
+ print(f'"O aluno {nome} tirou a nota {nota} e se enquadra no conceito {resultado}"')
+ #no código acima aparece na tela do usuário os dados interpretados
+com informações do nome,
+ #nota e em que conceito se enquadra.
+ #Vai aparecer se o usuário que calcular novamente, caso não queira
+o programa encerra.
+ inicio = (input("Deseja continuar? Sim ou Sair digite aqui: "))
