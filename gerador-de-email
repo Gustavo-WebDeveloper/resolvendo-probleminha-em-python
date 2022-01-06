@@ -1,0 +1,23 @@
+Faça uma função que receba o nome e sobrenome de uma pessoa e retorne a
+primeira letra de seu nome e seu sobrenome concatenando com a string @algoritmos.com.br.
+No algoritmo principal deverá ser apresentada a mensagem ao usuário contendo seu nome
+completo e seu email. Imprima na tela um teste do seu programa utilizando o seu nome e sobrenome concatenado com os dois últimos dígitos do seu RU.
+
+__________________________________________________________________________
+
+
+#No início pega os dados de quem precisa do email gerado
+nome = input('Digite seu nome:')
+sobrenome = input('Digite seu sobrenome:')
+RU = input('Digite os dois ultimos numero do seu RU:')
+#Depois de colocado os dados, essa função vai montar o algorítimo padrão do
+emails para serem gerados
+def criacao_de_email(nome, sobrenome, RU):
+ #abaixo é definido cada característica de cada declaração, até o número
+do RU foi colocado como palavras.
+ nome = str(nome)
+ sobrenome = str(nome)
+ RU = str(RU)
+ return
+#abaixo foi cocatenado seus respectivos dados para formação do email
+print("Sr(a) " + nome + " " + sobrenome + ", seu e-mail é " + nome[0] + sobrenome + RU + "@algoritmos.com.br")
